@@ -1,27 +1,7 @@
-Github
+SepiKahls Travel Booking Website
 
+The SepiKhals Travel Booking Website is a full-stack platform designed to simplify the travel planning process for users. Customers can explore destinations, book travel packages, and contact the agency online, while administrators can manage bookings, customer data, and communication through a secure dashboard. The backend is built using PHP and MySQL, with Docker used for seamless deployment and scalability.
 
-- 👋 Hi, I’m @Sepi-X
-- 👀 I’m interested in video games, AI, Analyzing Data, etc...  
-- 🌱 I’m currently learning OOP, Machine Learning, System Security, Data Mining
-- 💞️ I’m looking to collaborate on Creating Games and Developing AI
-- 📫 How to reach me https://www.linkedin.com/feed/
-- 😄 Pronouns: Sepi
-- ⚡ Fun fact: Your brain is constantly eating itself.
+The frontend, developed with HTML, CSS, and JavaScript, ensures a responsive and visually appealing user interface. Key features include a secure login and registration system, a package booking feature, a reviews section for client feedback, and an admin dashboard for managing travel packages and user interactions.
 
-<!---
-Sepi-X/Sepi-X is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
-- 👋 Hi, I’m @Sepi-X
-- 👀 I’m interested in video games, AI, Analyzing Data, etc...  
-- 🌱 I’m currently learning OOP, Machine Learning, System Security, Data Mining
-- 💞️ I’m looking to collaborate on Creating Games and Developing AI
-- 📫 How to reach me https://www.linkedin.com/feed/
-- 😄 Pronouns: Sepi
-- ⚡ Fun fact: Your brain is constantly eating itself.
-
-<!---
-Sepi-X/Sepi-X is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+The platform’s scalable architecture and user-friendly design enhance the overall travel booking experience for both customers and administrators. Whether you’re planning a relaxing getaway or an adventurous trip, SepiKhals Travel Booking makes the process convenient and enjoyable.
