@@ -41,7 +41,7 @@ if (isset($_GET['id'])) {
 
         $update_sql = "UPDATE bookings SET name = ?, email = ?, phone = ?, address = ?, location = ?, guests = ?, arrivals = ?, leaving = ? WHERE id = ?";
         $update_stmt = $conn->prepare($update_sql);
-        $update_stmt->bind_param("ssssisssi", $name, $email, $phone, $address, $location, $guests, $arrivals, $leaving, $id);
+        $update_stmt->bind_param("sssssssss", $name, $email, $phone, $address, $location, $guests, $arrivals, $leaving, $id);
 
         if ($update_stmt->execute()) {
             // Redirect without output
