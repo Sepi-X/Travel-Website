@@ -104,7 +104,6 @@ $result = $conn->query($sql);
                             <td><?php echo htmlspecialchars($row['guests']); ?></td>
                             <td><?php echo htmlspecialchars($row['arrivals']); ?></td>
                             <td><?php echo htmlspecialchars($row['leaving']); ?></td>
-                            <td class="action-buttons">
                             </td>
                         </tr>
                     <?php endwhile; ?>
