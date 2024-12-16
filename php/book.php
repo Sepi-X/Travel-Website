@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['send'])) {
 
     // Use prepared statements to prevent SQL injection
     if ($stmt = $conn->prepare($query)) {
-        $stmt->bind_param("ssssisss", $name, $email, $phone, $address, $location, $guests, $arrivals, $leaving);
+        $stmt->bind_param("ssssssss", $name, $email, $phone, $address, $location, $guests, $arrivals, $leaving);
 
         if ($stmt->execute()) {
             echo "Booking successful! We'll contact you soon.";
