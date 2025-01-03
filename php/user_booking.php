@@ -22,52 +22,86 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bookings</title>
-       <!-- custom css file link  -->
-    <link rel="stylesheet" href="../style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
             background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
         .bookings-container {
-            background-color: white;
+            max-width: 90%;
+            margin: 20px auto;
+            background: #fff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin: 20px 0;
         }
+
         th, td {
+            padding: 12px 15px;
             border: 1px solid #ddd;
-            padding: 12px;
             text-align: left;
         }
+
         th {
             background-color: #f2f2f2;
-            font-weight: bold;
+            color: #555;
+            text-transform: uppercase;
+            font-size: 12px;
         }
+
+        td {
+            font-size: 14px;
+            color: #333;
+        }
+
         .no-bookings {
             text-align: center;
             color: #666;
+            font-size: 18px;
             padding: 20px;
         }
-        .action-buttons a {
+
+        .btn {
+            display: inline-block;
             text-decoration: none;
-            color: white;
+            padding: 10px 20px;
             background-color: #007bff;
-            padding: 5px 10px;
-            border-radius: 4px;
+            color: #fff;
             font-size: 14px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 20px;
         }
-        .action-buttons a:hover {
+
+        .btn:hover {
             background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            table, th, td {
+                font-size: 12px;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -114,6 +148,9 @@ $result = $conn->query($sql);
                 <p>No bookings found.</p>
             </div>
         <?php endif; ?>
+        <a href="user_dashboard.php" class="btn">Back to Dashboard</a>
+        
+
     </div>
 
     <?php
@@ -122,3 +159,4 @@ $result = $conn->query($sql);
     ?>
 </body>
 </html>
+
