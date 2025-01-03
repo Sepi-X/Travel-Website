@@ -1,3 +1,4 @@
+/*------Font Format and the color  and the styles of it----------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
@@ -21,12 +22,12 @@
    text-decoration: none;
    text-transform: capitalize;
 }
-
+/*---- Font Size --------*/
 html{
    font-size: 62.5%;
    overflow-x: hidden;
 }
-
+/*-------- Scrollbar style color -----*/
 html::-webkit-scrollbar{
    width: 1rem;
 }
@@ -42,14 +43,14 @@ html::-webkit-scrollbar-thumb{
 section{
    padding:5rem 10%;
 }
-
+/*------ fadeIn is used in home part for animation -----*/
 @keyframes fadeIn {
    0%{
       transform: scale(0);
       opacity: 0;
    }
 }
-
+/*------- Class heading in the about us--------*/
 .heading{
    background-size: cover !important;
    background-position: center !important;
@@ -66,7 +67,7 @@ section{
    color:var(--white);
    text-shadow: var(--text-shadow);
 }
-
+/*-------- btn in the home class and others ------*/
 .btn{
    display: inline-block;
    background: var(--black);
@@ -80,6 +81,7 @@ section{
 .btn:hover{
    background: var(--main-color);
 }
+/*------- Class heading from our-services part --------*/
 
 .heading-title{
    text-align: center;
@@ -88,7 +90,7 @@ section{
    text-transform: uppercase;
    color:var(--black);
 }
-
+/*------ Class header --------*/
 .header{
    position: sticky;
    top:0; left:0; right:0;
@@ -101,11 +103,13 @@ section{
    align-items: center;
    justify-content: space-between;
 }
+/*------ Class header and logo --------*/
 
 .header .logo{
    font-size: 2.5rem;
    color:var(--black);
 }
+/*------ Class header and navbar --------*/
 
 .header .navbar a{
    font-size: 2rem;
@@ -116,13 +120,14 @@ section{
 .header .navbar a:hover{
    color:var(--main-color);
 }
-
+/*------- Size of Menu button--------*/
 #menu-btn{
    font-size: 2.5rem;
    cursor: pointer;
    color:var(--black);
    display: none;
 }
+/*------ Class of home ------*/
 
 .home{
    padding:0;
@@ -169,7 +174,7 @@ section{
 .home .slide .content .btn{
    animation:fadeIn .2s linear backwards .6s;
 }
-
+/*----- class of hoe in the class of swipper ------*/
 .home .swiper-button-next,
 .home .swiper-button-prev{
    top:inherit;
@@ -196,7 +201,7 @@ section{
 .home .swiper-button-prev{
    right: 7rem;
 }
-
+/*-------  services box-container which are the icons------*/
 .services .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -223,6 +228,7 @@ section{
    font-size: 1.7rem;
    padding-top: 1rem;
 }
+/*----- Class home-about -------  */
 
 .home-about{
    display: flex;
@@ -255,6 +261,7 @@ section{
    line-height: 2;
    color:var(--black);
 }
+/*------ Class of home-packages ------*/
 
 .home-packages{
    background: var(--light-bg);
@@ -265,7 +272,6 @@ section{
    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
    gap: 2rem;
 }
-
 .home-packages .box-container .box{
    border:var(--border);
    box-shadow: var(--box-shadow);
@@ -309,7 +315,7 @@ section{
    text-align: center;
    margin-top: 2rem;
 }
-
+/*----- Class of home-offer  --------*/
 .home-offer{
    text-align: center;
 }
@@ -331,7 +337,7 @@ section{
    line-height: 2;
    padding:1rem 0;
 }
-
+/*------ Class of about --------*/
 .about{
    display: flex;
    align-items: center;
@@ -389,7 +395,7 @@ section{
    color:var(--light-black);
    display:block;
 }
-
+/*------- Class of reviews ------*/
 .reviews{
    background: var(--light-bg);
 }
@@ -436,7 +442,7 @@ section{
    border-radius: 50%;
    margin-top: 1rem;
 }
-
+/* ----- Class of packages --------*/
 .packages .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -496,6 +502,7 @@ section{
    text-align: center;
    margin-top: 2rem;
 }
+/*---- Class of booking-form -------*/
 
 .booking .book-form{
    padding:2rem;
@@ -551,13 +558,14 @@ section{
 
 
 
-
+/*-------- Footer class ---------*/
 
 .footer{
    background: url(../images/footer-bg.jpg) no-repeat;
    background-size: cover;
    background-position: center;
 }
+/*-------- Footer class and box-container ---------*/
 
 .footer .box-container{
    display: grid;
@@ -587,7 +595,7 @@ section{
 .footer .box-container .box a:hover i{
    padding-right: 2rem;
 }
-
+/*-------- footer adn the credits part the color and the size----------*/
 .footer .credit{
    text-align: center;
    padding-top: 3rem;
@@ -614,7 +622,7 @@ section{
 
 
 
-
+/*------ For the menu when it getts shrink------ */
 
 /* media queries  */
 
@@ -635,14 +643,14 @@ section{
    section{
       padding:3rem 2rem;
    }
-
+/*----- Class home when get shrink ------*/
    .home .slide .content h3{
       font-size: 10vw;
    }
 
 }
-
 @media (max-width:768px){
+/*--- heading of bookings and others ------*/
 
    .heading h1{
       font-size: 4rem;
@@ -684,257 +692,11 @@ section{
    html{
       font-size: 50%;
    }
+/*------- Class heading from our-services part when it gets shrink --------*/
 
    .heading-title{
       font-size: 3.5rem;
    }
 
 }
-/*....................................user_booking.........................................*/
-/* General Styles */
-body {
-   font-family: Arial, sans-serif;
-   line-height: 1.6;
-   max-width: 100%;
-   margin: 0 auto;
-   padding: 20px;
-   background-color: #f4f4f4;
-}
 
-h1 {
-   color: #333;
-   text-align: center;
-   margin-bottom: 20px;
-}
-
-/* Container Styling */
-.bookings-container {
-   background-color: #fff;
-   padding: 20px;
-   border-radius: 8px;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   margin-top: 20px;
-}
-
-/* Table Styles */
-table {
-   width: 60%;
-   border-collapse: collapse;
-   margin-top: 10px;
-   background-color: #fff;
-}
-
-th, td {
-   border: 1px solid #ddd;
-   padding: 8px;
-   text-align: left;
-}
-
-th {
-   background-color: #f2f2f2;
-   font-weight: bold;
-   text-transform: uppercase;
-   font-size: 10px;
-   color: #555;
-}
-
-td {
-   font-size: 10px;
-   color: #333;
-}
-
-/* No Bookings Message */
-.no-bookings {
-   text-align: center;
-   color: #666;
-   padding: 20px;
-   font-size: 16px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-   table, th, td {
-       font-size: 12px;
-   }
-
-   .action-buttons a {
-       padding: 6px 8px;
-       font-size: 12px;
-   }
-}
-
-
-/*....................................admin_dashboard.........................................*/
-.dashboard-container {
-   max-width: 900px;
-   margin: 0 auto;
-   padding: 20px;
-   background-color: #fff;
-   border-radius: 8px;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-   text-align: center;
-   color: #333;
-}
-
-section {
-   margin: 20px 0;
-}
-
-form {
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
-}
-
-label {
-   font-weight: bold;
-}
-
-input, textarea, button {
-   padding: 10px;
-   font-size: 16px;
-   border-radius: 4px;
-   border: 1px solid #ddd;
-}
-
-button {
-   background-color: #007bff;
-   color: #fff;
-   cursor: pointer;
-}
-
-button:hover {
-   background-color: #0056b3;
-}
-
-.btn {
-   display: inline-block;
-   padding: 10px 20px;
-   background-color: #007bff;
-   color: white;
-   text-decoration: none;
-   border-radius: 4px;
-}
-
-.btn:hover {
-   background-color: #0056b3;
-}
-
-.logout-btn {
-   background-color: #dc3545;
-}
-
-.logout-btn:hover {
-   background-color: #c82333;
-}
-
-.success {
-   color: green;
-   margin-bottom: 10px;
-}
-
-.error {
-   color: red;
-   margin-bottom: 10px;
-}
-
-
-
-/*....................................manage_booking.........................................*/
-
-
-.manage-bookings-container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgb(255, 125, 230);
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
-}
-
-th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-}
-
-.btn {
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-.delete-btn {
-    background-color: #dc3545;
-}
-
-.delete-btn:hover {
-    background-color: #a71d2a;
-}
-.manage-bookings-container {
-   max-width: 900px;
-   margin: 20px auto;
-   padding: 20px;
-   background-color: #fff;
-   border-radius: 8px;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-table {
-   width: 100%;
-   border-collapse: collapse;
-   margin: 20px 0;
-}
-
-th, td {
-   border: 1px solid #ddd;
-   padding: 12px;
-   text-align: left;
-}
-
-th {
-   background-color: #f4f4f4;
-   font-weight: bold;
-}
-
-.btn {
-   padding: 5px 10px;
-   text-decoration: none;
-   color: #fff;
-   background-color: #007bff;
-   border-radius: 4px;
-   font-size: 14px;
-}
-
-.btn:hover {
-   background-color: #0056b3;
-}
-
-.delete-btn {
-   background-color: #dc3545;
-}
-
-.delete-btn:hover {
-   background-color: #a71d2a;
-}
