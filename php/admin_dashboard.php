@@ -19,21 +19,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Handle form submissions (example for packages)
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['add_package'])) {
-        $name = $_POST['package_name'];
-        $description = $_POST['package_description'];
-        
-
-        $sql = "INSERT INTO packages (name, description) VALUES ('$name', '$description')";
-        if ($conn->query($sql)) {
-            $successMessage = "Package added successfully!";
-        } else {
-            $errorMessage = "Error: " . $conn->error;
-        }
-    }
-}
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin-pages.css">
 </head>
 <body>
     <div class="dashboard-container">
@@ -63,23 +48,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </section>
 
         <section>
-            <h2>Manage Packages</h2>
-            <form action="admin_dashboard.php" method="post" class="form">
-                <label for="package_name">Package Name:</label>
-                <input type="text" id="package_name" name="package_name" required>
-
-                <label for="package_description">Description:</label>
-                <textarea id="package_description" name="package_description" required></textarea>
-
-
-                <button type="submit" name="add_package">Add Package</button>
-            </form>
+            <h2>Manage Users</h2>
+            <a href="manage_users.php" class="btn">View and Edit Users</a>
         </section>
 
-        <section>
-            <h2>Site Settings</h2>
-            <a href="site_settings.php" class="btn">Edit Site Settings</a>
-        </section>
+
+
 
         <section>
             <h2>Logout</h2>
