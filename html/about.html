@@ -4,18 +4,18 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>about</title>
+   <title>About</title>
 
-   <!-- swiper css link  -->
-   <link rel="stylesheet" href="css/https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-   <!-- font awesome cdn link  -->
+   <!-- Font Awesome -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-   <!-- custom css file link  -->
+   <!-- Custom CSS -->
    <link rel="stylesheet" href="../css/style.css">
-
 </head>
+
 <body>
    
 <!-- header section starts  -->
@@ -96,8 +96,8 @@
             </div>
             <p>Excellent service! Everything was well-organized, and the customer support was always available.</p>
             <h3>Lian D.</h3>
-            <span>traveler</span>
-            <img src="../images/pic-1.png" alt="">
+            <span>Traveler</span>
+            <img src="../images/pic-1.png" alt="Lian's picture">
          </div>
 
          <div class="swiper-slide slide">
@@ -107,10 +107,10 @@
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
             </div>
-            <p>The booking process was so easy, and the team was super helpful! My trip to Bali was unforgettable.”</p>
+            <p>The booking process was so easy, and the team was super helpful! My trip to Bali was unforgettable.</p>
             <h3>Sophia R.</h3>
-            <span>traveler</span>
-            <img src="../images/pic-2.png" alt="">
+            <span>Traveler</span>
+            <img src="../images/pic-2.png" alt="Sophia's picture">
          </div>
 
          <div class="swiper-slide slide">
@@ -119,10 +119,10 @@
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
             </div>
-            <p> loved how smooth and hassle-free the entire process was. Highly recommend it!</p>
+            <p>Loved how smooth and hassle-free the entire process was. Highly recommend it!</p>
             <h3>Ethan P.</h3>
-            <span>traveler</span>
-            <img src="../images/pic-3.png" alt="">
+            <span>Traveler</span>
+            <img src="../images/pic-3.png" alt="Ethan's picture">
          </div>
 
          <div class="swiper-slide slide">
@@ -133,10 +133,10 @@
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
             </div>
-            <p>Great website! Found amazing deals and had the best experience traveling to Greece</p>
+            <p>Great website! Found amazing deals and had the best experience traveling to Greece.</p>
             <h3>Olivia M.</h3>
-            <span>traveler</span>
-            <img src="../images/pic-4.png" alt="">
+            <span>Traveler</span>
+            <img src="../images/pic-4.png" alt="Olivia's picture">
          </div>
 
          <div class="swiper-slide slide">
@@ -147,8 +147,8 @@
             </div>
             <p>Friendly staff, quick responses, and awesome travel packages. I’ll definitely book again!</p>
             <h3>Noah L.</h3>
-            <span>traveler</span>
-            <img src="../images/pic-5.png" alt="">
+            <span>Traveler</span>
+            <img src="../images/pic-5.png" alt="Noah's picture">
          </div>
 
          <div class="swiper-slide slide">
@@ -160,8 +160,8 @@
             </div>
             <p>From start to finish, everything was perfect. They made my dream vacation come true!</p>
             <h3>Emma K.</h3>
-            <span>traveler</span>
-            <img src="../images/pic-6.png" alt="">
+            <span>Traveler</span>
+            <img src="../images/pic-6.png" alt="Emma's picture">
          </div>
 
       </div>
@@ -171,8 +171,6 @@
 </section>
 
 <!-- reviews section ends -->
-
-
 
 
 
@@ -232,24 +230,31 @@
 
 <!-- footer section ends -->
 
-
-
-
-
-
-
-
-
-<!-- swiper js link  -->
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="../script.js"></script>
-
-
-
-
-
+<!-- Swiper.js -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<!------ swipper of reviews ------->
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+      var swiper = new Swiper(".reviews-slider", {
+         grabCursor: true,
+         loop: true,
+         autoHeight: true,
+         spaceBetween: 20,
+         breakpoints: {
+            0: {
+               slidesPerView: 1,
+            },
+            700: {
+               slidesPerView: 2,
+            },
+            1000: {
+               slidesPerView: 3,
+            },
+         },
+      });
+   });
+</script>
 
 
 
